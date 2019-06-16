@@ -103,12 +103,12 @@ body {
     display: block;
     font-size: 1.6rem;
     font-weight: 400;
-    letter-spacing: .3rem;
+    letter-spacing: 0.3rem;
     animation: moveInRight 2s ease-out;
     /*600px*/ }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
-        letter-spacing: .5rem; } }
+        letter-spacing: 0.5rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -118,8 +118,8 @@ body {
   background-image: linear-gradient(to right, #5284d4, #1154c0);
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: .2rem;
-  transition: all .2s;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
   /*900px*/
   /*600px*/ }
   @media only screen and (max-width: 56.25em) {
@@ -134,7 +134,9 @@ body {
   .heading-secondary--white {
     background-image: linear-gradient(to right, #f5f4f4, #eee); }
   .heading-secondary__popup {
-    font-size: 3rem; }
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 5rem; }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -194,7 +196,7 @@ body {
   text-decoration: none;
   display: inline-block;
   border-radius: 10rem;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
   position: relative;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   padding: 1.5rem 4rem;
@@ -224,7 +226,8 @@ body {
 .btn--blue {
   background-color: #3d71c5;
   color: #fff;
-  padding: 1.5rem 4rem; }
+  padding: 1.5rem 4rem;
+  margin-bottom: 3rem; }
   .btn--blue::after {
     background-color: #3d71c5; }
 
@@ -238,10 +241,10 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all .2s ease; }
+  transition: all 0.2s ease; }
 
 .btn--animated {
-  animation: moveInBottom .5s ease-out .75s;
+  animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
@@ -251,7 +254,7 @@ body {
   text-decoration: none;
   border-bottom: 1px solid #3d71c5;
   padding: 3px;
-  transition: all .2s ease; }
+  transition: all 0.2s ease; }
 
 .btn-text:hover {
   background-color: #3d71c5;
@@ -402,11 +405,11 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(https://res.cloudinary.com/pipen95/image/upload/v1560635670/Aidactiv/video-hd_q3dg1i.jpg); }
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(https://res.cloudinary.com/pipen95/image/upload/v1560698475/Aidactiv/news.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #5284d4, #1154c0), url(https://res.cloudinary.com/pipen95/image/upload/v1560638699/Aidactiv/writing-min_igr6ei.jpg); }
+      background-image: linear-gradient(to right bottom, #5284d4, #1154c0), url(https://res.cloudinary.com/pipen95/image/upload/v1560698474/Aidactiv/writing.jpg); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(https://res.cloudinary.com/pipen95/image/upload/v1560635644/Aidactiv/correction_zc1zvy.jpg); }
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(https://res.cloudinary.com/pipen95/image/upload/v1560698474/Aidactiv/correction.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -430,7 +433,7 @@ body {
     .card__details ul {
       list-style: none;
       width: 80%;
-      margin: 0  auto; }
+      margin: 0 auto; }
     .card__details li {
       text-align: center;
       font-size: 1.6rem;
@@ -579,108 +582,106 @@ body {
     height: 100%;
     object-fit: cover; }
 
-.form__group {
-  margin: 0 1rem; }
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem; }
   .form__group--btn-send {
-    margin-top: 3rem;
-    margin-left: 28%; }
-
-.form__input {
-  font-size: 1.5rem;
-  font-family: inherit;
-  color: inherit;
-  padding: 1.5rem 2rem;
-  border-radius: 1px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border: none;
-  border-bottom: 3px solid transparent;
-  width: 90%;
-  display: block;
-  transition: all .3s;
-  /*900px*/ }
-  @media only screen and (max-width: 56.25em) {
-    .form__input {
-      width: 100%; } }
-  .form__input:focus {
-    outline: none;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
-    border-bottom: 3px solid #28b485; }
-  .form__input:focus:invalid {
-    border-bottom: 3px solid #fc5f2f; }
-  .form__input::-webkit-input-placeholder {
-    color: #999; }
-  .form__input::-webkit-inner-spin-button {
-    -webkit-appearance: inner-spin-button;
-    display: inline-block;
-    cursor: default;
-    flex: 0 0 auto;
-    align-self: stretch;
-    user-select: none;
-    opacity: 0;
-    pointer-events: none;
-    -webkit-pointer-events: none;
-    -webkit-user-modify: read-only; }
-
-.form__label {
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-left: 2rem;
-  margin-top: .8rem;
-  display: block;
-  transition: all .3s; }
-
-.form__input:placeholder-shown + .form__label {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-4rem); }
-
-.form__radio-group {
-  width: 20%;
-  display: inline-block;
-  /*900px*/ }
-  @media only screen and (max-width: 56.25em) {
-    .form__radio-group {
-      margin-bottom: 2rem; } }
-
-.form__radio-input {
-  display: none; }
-
-.form__radio-label {
-  font-size: 1.6rem;
-  cursor: pointer;
-  position: relative;
-  padding: 0.5rem 0rem 0 6.8rem; }
-
-.form__radio-button {
-  height: 3rem;
-  width: 3rem;
-  border: 5px solid #3d71c5;
-  border-radius: 50%;
-  display: inline-block;
-  position: absolute;
-  left: 3rem;
-  top: 0; }
-  .form__radio-button::after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    content: "";
+    margin-top: 3rem; }
+  .form__input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 1.5rem;
+    margin: 0 auto;
+    border-radius: 1px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 100%;
     display: block;
-    height: 1.2rem;
-    width: 1.2rem;
-    border-radius: 50%;
-    background-color: #3d71c5;
+    transition: all 0.3s;
+    /*900px*/ }
+    @media only screen and (max-width: 56.25em) {
+      .form__input {
+        width: 100%; } }
+    .form__input:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+      border-bottom: 3px solid #28b485; }
+    .form__input:focus:invalid {
+      border-bottom: 3px solid #fc5f2f; }
+    .form__input::-webkit-input-placeholder {
+      color: #999; }
+    .form__input::-webkit-inner-spin-button {
+      -webkit-appearance: inner-spin-button;
+      display: inline-block;
+      cursor: default;
+      flex: 0 0 auto;
+      align-self: stretch;
+      user-select: none;
+      opacity: 0;
+      pointer-events: none;
+      -webkit-pointer-events: none;
+      -webkit-user-modify: read-only; }
+  .form__label {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.8rem;
+    display: block;
+    transition: all 0.3s; }
+  .form__input:placeholder-shown + .form__label {
     opacity: 0;
-    transition: opacity .2s; }
-
-.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
-  opacity: 1; }
-
-.ou {
-  margin: 0 5rem 1rem 0;
-  text-align: center;
-  text-transform: uppercase; }
+    visibility: hidden;
+    transform: translateY(-4rem); }
+  .form__radio-group {
+    width: 20%;
+    display: inline-block;
+    /*900px*/ }
+    @media only screen and (max-width: 56.25em) {
+      .form__radio-group {
+        margin-bottom: 2rem; } }
+  .form__radio-input {
+    display: none; }
+  .form__radio-label {
+    font-size: 1.6rem;
+    cursor: pointer;
+    position: relative;
+    padding: 0.5rem 0rem 0 6.8rem; }
+  .form__radio-box {
+    display: flex;
+    padding-left: 10rem; }
+  .form__radio-button {
+    height: 3rem;
+    width: 3rem;
+    border: 5px solid #3d71c5;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 3rem;
+    top: 0; }
+    .form__radio-button::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      content: "";
+      display: block;
+      height: 1.2rem;
+      width: 1.2rem;
+      border-radius: 50%;
+      background-color: #3d71c5;
+      opacity: 0;
+      transition: opacity 0.2s; }
+  .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+    opacity: 1; }
+  .form .ou {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem; }
 
 .popup {
   height: 100vh;
@@ -692,11 +693,11 @@ body {
   z-index: 9999;
   opacity: 0;
   visibility: hidden;
-  transition: all .3s; }
+  transition: all 0.3s; }
   .popup:target {
     opacity: 1;
     visibility: visible;
-    transition: all .3s; }
+    transition: all 0.3s; }
   .popup:target .popup__content {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1); }
@@ -708,7 +709,7 @@ body {
     font-size: 3rem;
     text-decoration: none;
     display: inline-block;
-    transition: all .2s;
+    transition: all 0.2s;
     line-height: 0.5; }
   .popup__close:hover {
     color: #3d71c5; }
@@ -726,11 +727,15 @@ body {
     overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
-    transition: all .6s .2s; }
+    transition: all 0.6s 0.2s; }
     @media only screen and (max-width: 1200px) {
       .popup__content {
         grid-template-columns: 1fr;
         width: 60%; } }
+    @media only screen and (max-width: 600px) {
+      .popup__content {
+        grid-template-columns: 1fr;
+        width: 80%; } }
   .popup__left {
     grid-column: 1/2;
     display: grid;
@@ -739,32 +744,32 @@ body {
       grid-row: 1/2;
       display: block;
       width: 40rem;
-      height: 30rem;
+      height: 32rem;
       overflow: hidden; }
     .popup__left--img-bottom {
       grid-row: 2/3;
       display: block;
       width: 40rem;
-      height: 30rem;
+      height: 32rem;
       overflow: hidden; }
     @media only screen and (max-width: 1200px) {
       .popup__left {
         display: none; } }
   .popup__right {
-    margin: 0 6rem; }
-    .popup__right__text {
-      font-size: 1.4rem;
-      margin-bottom: 4rem;
-      column-count: 2;
-      column-gap: 4rem;
-      column-rule: 1px solid #eee;
-      -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-      hyphens: auto; }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .popup__right--box {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      padding: 0 3rem; }
 
 .header {
   height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(82, 132, 212, 0.8), rgba(17, 84, 192, 0.8)), url(https://res.cloudinary.com/pipen95/image/upload/v1560635642/Aidactiv/tablette_k6kx2h.jpg);
+  background-image: linear-gradient(to right bottom, rgba(82, 132, 212, 0.8), rgba(17, 84, 192, 0.8)), url(https://res.cloudinary.com/pipen95/image/upload/v1560698474/Aidactiv/tablette.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -776,12 +781,6 @@ body {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
       height: 95vh; } }
-  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-resolution: 192dpi) and (min-width: 37.5em) {
-    .header {
-      background-image: linear-gradient(to right bottom, rgba(82, 132, 212, 0.8), rgba(17, 84, 192, 0.8)), url(https://res.cloudinary.com/pipen95/image/upload/v1560636105/Aidactiv/tablette-2_wy2uhi.jpg); } }
-  @media only screen and (min-width: 125em) {
-    .header {
-      background-image: linear-gradient(to right bottom, rgba(82, 132, 212, 0.8), rgba(17, 84, 192, 0.8)), url(https://res.cloudinary.com/pipen95/image/upload/v1560636105/Aidactiv/tablette-min_kfjcvm.jpg); } }
   @media only screen and (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
@@ -1059,9 +1058,6 @@ body {
   /*600px*/ }
   .section-features > * {
     transform: skewY(4deg); }
-  @media (min-resolution: 192dpi) {
-    .section-features {
-      background-image: linear-gradient(to right bottom, rgba(82, 132, 212, 0.8), rgba(17, 84, 192, 0.8)), url(https://res.cloudinary.com/pipen95/image/upload/v1560636426/Aidactiv/student-2-min_d6pv7j.jpg); } }
   @media only screen and (max-width: 56.25em) {
     .section-features {
       padding: 10rem 0;
@@ -1179,27 +1175,12 @@ body {
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3); }
 
-.logo__youtube {
-  padding: 1rem 3rem;
-  color: #cd201f;
-  background-color: #fff;
-  margin: 2rem 7.7rem 2rem 1.7rem; }
-
 .logo__facebook {
   margin: 1.5rem 0;
   padding: 1rem 2rem;
   background-color: #3b5999;
-  color: #fff; }
-  .logo__facebook--form {
-    margin-left: 22%;
-    padding: 1.4rem 3rem; }
-
-.logo__instagram {
-  padding: 1rem 2rem;
-  margin: 2rem 0 1rem 0;
-  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 1%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
   color: #fff;
-  border: 0.3rem solid #fff; }
+  text-align: center; }
 
 .logo::after {
   content: "";
