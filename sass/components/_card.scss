@@ -63,16 +63,16 @@
 
 
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark) ,url(./img/video-hd-min.jpeg);
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark) ,url(https://res.cloudinary.com/pipen95/image/upload/v1560635670/Aidactiv/video-hd_q3dg1i.jpg);
             
             
         }
         &--2 {
-            background-image:linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),url(./img/writing-min.jpeg);
+            background-image:linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),url(https://res.cloudinary.com/pipen95/image/upload/v1560638699/Aidactiv/writing-min_igr6ei.jpg);
             
         }
         &--3 {
-            background-image:linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),url(./img/correction.jpg);
+            background-image:linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),url(https://res.cloudinary.com/pipen95/image/upload/v1560635644/Aidactiv/correction_zc1zvy.jpg);
             
         }
 
@@ -92,7 +92,6 @@
 
     &__heading-span {
         padding: 1rem 1.5rem;
-        // -webkit-box-decoration-break: clone; box-decoration-break: clone;
 
         &--1 {
             background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .95), 

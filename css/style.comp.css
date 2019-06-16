@@ -402,11 +402,11 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(./img/video-hd-min.jpeg); }
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(https://res.cloudinary.com/pipen95/image/upload/v1560635670/Aidactiv/video-hd_q3dg1i.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #5284d4, #1154c0), url(./img/writing-min.jpeg); }
+      background-image: linear-gradient(to right bottom, #5284d4, #1154c0), url(https://res.cloudinary.com/pipen95/image/upload/v1560638699/Aidactiv/writing-min_igr6ei.jpg); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(./img/correction.jpg); }
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(https://res.cloudinary.com/pipen95/image/upload/v1560635644/Aidactiv/correction_zc1zvy.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -721,36 +721,50 @@ body {
     background-color: #f1f1f1;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
     border-radius: 3px;
-    display: table;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
     transition: all .6s .2s; }
+    @media only screen and (max-width: 1200px) {
+      .popup__content {
+        grid-template-columns: 1fr;
+        width: 60%; } }
   .popup__left {
-    width: 35%;
-    display: table-cell;
-    vertical-align: center; }
-    .popup__left--img {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: 1fr 1fr; }
+    .popup__left--img-top {
+      grid-row: 1/2;
       display: block;
-      width: 100%; }
+      width: 40rem;
+      height: 30rem;
+      overflow: hidden; }
+    .popup__left--img-bottom {
+      grid-row: 2/3;
+      display: block;
+      width: 40rem;
+      height: 30rem;
+      overflow: hidden; }
+    @media only screen and (max-width: 1200px) {
+      .popup__left {
+        display: none; } }
   .popup__right {
-    width: 65%;
-    display: table-cell;
-    vertical-align: middle;
-    padding: 1rem  5rem 0 5rem; }
-  .popup__text {
-    font-size: 1.4rem;
-    margin-bottom: 4rem;
-    column-count: 2;
-    column-gap: 4rem;
-    column-rule: 1px solid #eee;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto; }
+    margin: 0 6rem; }
+    .popup__right__text {
+      font-size: 1.4rem;
+      margin-bottom: 4rem;
+      column-count: 2;
+      column-gap: 4rem;
+      column-rule: 1px solid #eee;
+      -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto; }
 
 .header {
   height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(82, 132, 212, 0.8), rgba(17, 84, 192, 0.8)), url(./img/tablette-2-min.jpg);
+  background-image: linear-gradient(to right bottom, rgba(82, 132, 212, 0.8), rgba(17, 84, 192, 0.8)), url(https://res.cloudinary.com/pipen95/image/upload/v1560635642/Aidactiv/tablette_k6kx2h.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -764,10 +778,10 @@ body {
       height: 95vh; } }
   @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-resolution: 192dpi) and (min-width: 37.5em) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(82, 132, 212, 0.8), rgba(17, 84, 192, 0.8)), url(./img/tablette-2.jpg); } }
+      background-image: linear-gradient(to right bottom, rgba(82, 132, 212, 0.8), rgba(17, 84, 192, 0.8)), url(https://res.cloudinary.com/pipen95/image/upload/v1560636105/Aidactiv/tablette-2_wy2uhi.jpg); } }
   @media only screen and (min-width: 125em) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(82, 132, 212, 0.8), rgba(17, 84, 192, 0.8)), url(./img/tablette-min.jpg); } }
+      background-image: linear-gradient(to right bottom, rgba(82, 132, 212, 0.8), rgba(17, 84, 192, 0.8)), url(https://res.cloudinary.com/pipen95/image/upload/v1560636105/Aidactiv/tablette-min_kfjcvm.jpg); } }
   @media only screen and (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
@@ -916,7 +930,7 @@ body {
   z-index: 1500;
   opacity: 0;
   width: 0;
-  transition: opacity .8s;
+  transition: opacity 0.8s;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
 .navigation__list {
@@ -941,7 +955,7 @@ body {
   text-transform: uppercase;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
   background-size: 220%;
-  transition: all .4s; }
+  transition: all 0.4s; }
   .navigation__link:link span, .navigation__link:visited span {
     margin-right: 1.5rem;
     display: inline-block; }
@@ -970,11 +984,11 @@ body {
     content: "";
     position: absolute;
     left: 0;
-    transition: all .2s; }
+    transition: all 0.2s; }
   .navigation__icon::before {
-    top: -.8rem; }
+    top: -0.8rem; }
   .navigation__icon::after {
-    top: .8rem; }
+    top: 0.8rem; }
 
 .navigation__button:hover .navigation__icon::before {
   top: -1rem; }
@@ -1018,13 +1032,13 @@ body {
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
   .row .col-2-of-3 {
-    width: calc(2*((100% - 2 * 6rem) / 3) + 6rem); }
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
   .row .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
   .row .col-2-of-4 {
-    width: calc(2*((100% - 3 * 6rem) / 4) + 6rem); }
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
-    width: calc(3*((100% - 3 * 6rem) / 4) + 2*6rem); }
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 *6rem); }
 
 .section-about {
   background-color: #f5f4f4;
@@ -1037,7 +1051,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(82, 132, 212, 0.8), rgba(17, 84, 192, 0.8)), url(./img/student-2.jpg);
+  background-image: linear-gradient(to right bottom, rgba(82, 132, 212, 0.8), rgba(17, 84, 192, 0.8)), url(https://res.cloudinary.com/pipen95/image/upload/v1560636426/Aidactiv/student-2_tb31ux.jpg);
   background-size: cover;
   transform: skewY(-4deg);
   margin-top: -10rem;
@@ -1047,7 +1061,7 @@ body {
     transform: skewY(4deg); }
   @media (min-resolution: 192dpi) {
     .section-features {
-      background-image: linear-gradient(to right bottom, rgba(82, 132, 212, 0.8), rgba(17, 84, 192, 0.8)), url(./img/student-2-min.jpg); } }
+      background-image: linear-gradient(to right bottom, rgba(82, 132, 212, 0.8), rgba(17, 84, 192, 0.8)), url(https://res.cloudinary.com/pipen95/image/upload/v1560636426/Aidactiv/student-2-min_d6pv7j.jpg); } }
   @media only screen and (max-width: 56.25em) {
     .section-features {
       padding: 10rem 0;
@@ -1126,7 +1140,7 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     -webkit-background-clip: text;
     color: transparent;
     /*900px*/
@@ -1144,7 +1158,7 @@ body {
 
 .logo, .logo:link, .logo:visited {
   border-radius: 10rem;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
@@ -1183,7 +1197,7 @@ body {
 .logo__instagram {
   padding: 1rem 2rem;
   margin: 2rem 0 1rem 0;
-  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 1%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 1%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
   color: #fff;
   border: 0.3rem solid #fff; }
 
@@ -1197,7 +1211,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all .2s ease; }
+  transition: all 0.2s ease; }
 
 .et {
   position: absolute;

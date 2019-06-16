@@ -9,14 +9,6 @@
     opacity: 0;
     visibility: hidden;
     transition: all .3s;
-    // -webkit-backdrop-filter: blur (10px);
-    // backdrop-filter: blur (10px);
-
-    // @supports (-webkit-backdrop-filter: blur (10px) or backdrop-filter: blur (10px)){
-    //     -webkit-backdrop-filter: blur (10px);
-    //     backdrop-filter: blur (10px);
-    //     background-color: rgba($color-black, .3);
-    // }
 
     // OPEN STATES
     &:target {
@@ -44,7 +36,7 @@
             line-height: 0.5;
             
         }
-
+    
         &:hover {
             color: $color-primary;
         }
@@ -62,8 +54,6 @@
         transform: translate(-50%, -50%) scale(.5);
         transition: all .6s .2s;
     
-        
-
     }
     
     &__left {
@@ -75,28 +65,18 @@
         &--img {
             display:block;
             width: 100%;
-            
         }
-        
     }
 
     &__right {
-        width: 65%;
-        display: table-cell;
-        vertical-align: middle;
-        padding: 1rem  5rem 0 5rem;
-    }
-
-    
+       
 
     &__text {
         font-size: 1.4rem;
         margin-bottom: 4rem;
-        
         column-count: 2;
         column-gap: 4rem;
         column-rule: 1px solid $color-grey-light-2;
-
         -webkit-hyphens: auto;  -ms-hyphens: auto;  hyphens: auto;
     }
 
