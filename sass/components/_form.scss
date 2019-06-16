@@ -1,10 +1,13 @@
 .form {
-  &__group {
-    margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
 
+  &__group {
     &--btn-send {
       margin-top: 3rem;
-      margin-left: 28%;
     }
   }
 
@@ -12,14 +15,18 @@
     font-size: 1.5rem;
     font-family: inherit;
     color: inherit;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1.5rem;
+    margin: 0 auto;
     border-radius: 1px;
     background-color: rgba($color-white, 0.9);
     border: none;
     border-bottom: 3px solid transparent;
-    width: 90%;
+    width: 100%;
     display: block;
     transition: all 0.3s;
+
+    // @media only screen and (max-width: 1200px) {
+    // }
 
     @include respond(tab-port) {
       width: 100%;
@@ -77,6 +84,7 @@
       margin-bottom: 2rem;
     }
   }
+
   &__radio-input {
     display: none;
   }
@@ -86,6 +94,15 @@
     cursor: pointer;
     position: relative;
     padding: 0.5rem 0rem 0 6.8rem;
+  }
+
+  &__radio-box {
+    display: flex;
+    padding-left: 10rem;
+
+    // @media only screen and (max-width: 600px) {
+    //   flex-direction: column;
+    // }
   }
 
   &__radio-button {
@@ -114,10 +131,10 @@
   &__radio-input:checked ~ &__radio-label &__radio-button::after {
     opacity: 1;
   }
-}
 
-.ou {
-  margin: 0 5rem 1rem 0;
-  text-align: center;
-  text-transform: uppercase;
+  .ou {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
 }
