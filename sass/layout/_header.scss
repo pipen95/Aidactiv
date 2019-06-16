@@ -5,7 +5,7 @@
       rgba($color-primary-light, 0.8),
       rgba($color-primary-dark, 0.8)
     ),
-    url(https://res.cloudinary.com/pipen95/image/upload/v1560635642/Aidactiv/tablette_k6kx2h.jpg);
+    url(https://res.cloudinary.com/pipen95/image/upload/v1560698474/Aidactiv/tablette.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -16,25 +16,6 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     height: 95vh;
-  }
-
-  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-    (min-resolution: 192dpi) and (min-width: 37.5em) {
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8)
-      ),
-      url(https://res.cloudinary.com/pipen95/image/upload/v1560636105/Aidactiv/tablette-2_wy2uhi.jpg);
-  }
-
-  @media only screen and (min-width: 125em) {
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8)
-      ),
-      url(https://res.cloudinary.com/pipen95/image/upload/v1560636105/Aidactiv/tablette-min_kfjcvm.jpg);
   }
 
   @include respond(phone) {
