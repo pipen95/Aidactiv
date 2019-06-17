@@ -11,9 +11,6 @@ body {
   backface-visibility: hidden;
   margin-bottom: 6rem;
 
-  @include respond(phone) {
-  }
-
   &--main {
     display: block;
     text-transform: uppercase;
@@ -109,7 +106,7 @@ body {
 
 .space {
   display: inline-block;
-  padding-bottom: 0.5rem;
+  padding-bottom: 2rem;
 }
 
 .petit {
