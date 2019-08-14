@@ -10,33 +10,47 @@
 
 .section-features {
   padding: 20rem 0;
+  background-image: -webkit-gradient(
+      linear,
+      left top, right bottom,
+      from(rgba($color-primary-light, 0.8)),
+      to(rgba($color-primary-dark, 0.8))
+    ),
+    url(https://res.cloudinary.com/pipen95/image/upload/v1560698474/Aidactiv/student-group.jpg);
   background-image: linear-gradient(
       to right bottom,
       rgba($color-primary-light, 0.8),
       rgba($color-primary-dark, 0.8)
     ),
-    url(https://res.cloudinary.com/pipen95/image/upload/v1560636426/Aidactiv/student-2_tb31ux.jpg);
+    url(https://res.cloudinary.com/pipen95/image/upload/v1560698474/Aidactiv/student-group.jpg);
   background-size: cover;
-  transform: skewY(-4deg);
+  -webkit-transform: skewY(-4deg);
+          transform: skewY(-4deg);
   margin-top: -10rem;
 
   & > * {
-    transform: skewY(4deg);
+    -webkit-transform: skewY(4deg);
+            transform: skewY(4deg);
   }
 
   @include respond(tab-port) {
     padding: 10rem 0;
 
-    transform: skewY(-5deg);
+    -webkit-transform: skewY(-5deg);
+
+            transform: skewY(-5deg);
     & > * {
-      transform: skewY(5deg);
+      -webkit-transform: skewY(5deg);
+              transform: skewY(5deg);
     }
   }
 
   @include respond(phone) {
-    transform: skewY(-4deg);
+    -webkit-transform: skewY(-4deg);
+            transform: skewY(-4deg);
     & > * {
-      transform: skewY(4deg);
+      -webkit-transform: skewY(4deg);
+              transform: skewY(4deg);
     }
   }
 }
@@ -62,6 +76,12 @@
 
 .section-social {
   padding: 15rem 0;
+  background-image: -webkit-gradient(
+    linear,
+    left top, right bottom,
+    from(rgba($color-primary-light, 0.9)),
+    to(rgba($color-primary-dark, 0.9))
+  );
   background-image: linear-gradient(
     to right bottom,
     rgba($color-primary-light, 0.9),
@@ -79,7 +99,8 @@
   );
   background-size: 100%;
   border-radius: $border-radius-small;
-  box-shadow: $box-shadow-small;
+  -webkit-box-shadow: $box-shadow-small;
+          box-shadow: $box-shadow-small;
   position: relative;
   z-index: 0;
   height: 50rem;
@@ -133,6 +154,12 @@
     color: transparent;
 
     &--youtube {
+      background-image: -webkit-gradient(
+        linear,
+        left top, right top,
+        from($color-grey-light-1),
+        to($color-grey-light-2)
+      );
       background-image: linear-gradient(
         to right,
         $color-grey-light-1,
@@ -141,6 +168,12 @@
     }
 
     &--facebook {
+      background-image: -webkit-gradient(
+        linear,
+        left top, right top,
+        from($color-primary-light),
+        to($color-primary-dark)
+      );
       background-image: linear-gradient(
         to right,
         $color-primary-light,
@@ -163,12 +196,14 @@
   &:link,
   &:visited {
     border-radius: 10rem;
+    -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
     position: relative;
-    box-shadow: $box-shadow-small;
+    -webkit-box-shadow: $box-shadow-small;
+            box-shadow: $box-shadow-small;
     position: relative;
   }
 
@@ -206,6 +241,7 @@
     top: 0;
     left: 0;
     z-index: -1;
+    -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
 }
@@ -218,6 +254,12 @@
   font-size: 3rem;
   top: 40%;
   left: 46.2%;
+  background-image: -webkit-gradient(
+    linear,
+    left top, right top,
+    from($color-grey-light-1),
+    to($color-grey-dark-2)
+  );
   background-image: linear-gradient(
     to right,
     $color-grey-light-1,
