@@ -25,6 +25,6 @@
     "cloudinary-core": "^2.6.3",
     "latest-version": "^5.1.0",
     "lodash": "^4.17.11",
-    "npm": "^6.9.0"
+    "npm": "^6.13.4"
   }
 }
